@@ -2,7 +2,6 @@
     --primary-color: #f2f6f8;
     --secondary-color: #079992;
     --accent1-color: #f6b93b;
-    --accent2-color: #f8f9fa;
     --heading-font: "Bebas Neue",sans-serif;
     --body-font: "Montserrat", sans-serif;
 }
@@ -65,7 +64,7 @@ p,section, article {
     color: white;
 }
 
-.hero article {
+.hero article img {
     position: absolute;
     float: right;
     width: 125px;

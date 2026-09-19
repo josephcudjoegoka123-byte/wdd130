@@ -4,39 +4,51 @@
     box-sizing: border-box;
 }
 
-
 :root {
     --background-color: darkblue;
     --heading-color: steelblue;
     --padding: 10px;
     --border: 1px solid #000;
     --color: white;
-    --text-align:center;
+    --text-align: center;
     --height: auto;
-    --margin:1em;
-    --img-padding:2px;
-    --box-shadow:0 0 30px gray;
+    --margin: 1em;
+    --img-padding: 2px;
+    --box-shadow: 0 0 30px gray;
 }
 
-
-
-nav{
+nav {
     background-color: var(--background-color);
     padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
+
     color: var(--color);
     display: block;
     padding: var(--padding);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--heading-color);
+    border-bottom: 1px solid var(--heading-color);
+    padding-bottom: 0.5rem;
 }
+
 body {
     font-size: 16px;
     font-family: Arial, sans-serif;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 img {
@@ -52,25 +64,27 @@ p {
     padding: 1rem;
 }
 
-main {
-    max-width: 840px;
-}
-
 aside {
     width: 20em;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: var(--text-align);
 }
 
-aside h2{
-    position: relative;
+aside h2 {
+    position: absolute;
     top: 40px;
-    left: 5px;
+    left: 0px;
+    width: 100%;
+    color: white;
 }
-
 
 aside img {
     width: 200px;
     height: var(--height);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
 }
 
 main img {
@@ -87,17 +101,32 @@ footer {
     margin-top: var(--margin);
     border-top: var(--border);
     text-align: var(--text-align);
+
 }
+
 /* Class Selectors */
 .box {
     margin: 1rem;
     border: var(--border);
     padding: 1rem;
-    background-color: slategray;
-    color: #333;
+    background-color: rgb(214, 221, 226);
+    color: #181717;
 
 }
 
-.indent{
+.indent {
     padding-left: 2rem;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: start;
 }

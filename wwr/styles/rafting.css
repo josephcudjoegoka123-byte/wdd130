@@ -33,12 +33,19 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: #055A4F;
 }
-
+h2 { 
+    font-family: var(--heading-font);
+    
+}
+.history h2,
+.adventure h2,
+.adventures h2 {
+  color: #00796B;
+}
 p,
 section,
 article {

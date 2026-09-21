@@ -36,7 +36,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: #079992;
+    color: #055A4F;
 }
 
 p,
@@ -74,9 +74,9 @@ article {
     bottom: 30px;
     left: 50px;
     right: 50px;
-    background-color: rgb(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 16px;
-    color: #333;
+    color: #333333;
 }
 
 .hero h1 {

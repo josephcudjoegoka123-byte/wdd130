@@ -1,7 +1,6 @@
 :root {
     --primary-color: #f2f6f8;
-    --secondary-color: #079992;
-    --accent1-color: #f6b93b;
+    --secondary-color: #055A4F;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: "Montserrat", sans-serif;
 }
@@ -72,14 +71,11 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgb(255, 255, 255, 0.9 green blue / alpha);
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 15px;
+    bottom: 30px;
+    left: 50px;
+    right: 50px;
+    background-color: rgb(255, 255, 255, 0.95);
+    padding: 16px;
     color: #333;
 }
 
@@ -87,18 +83,22 @@ article {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     opacity: 0.85;
-    background-color: #079992;
+    background-color: var(--secondary-color);
     color: white;
 }
 
 .hero article img {
-    position: absolute;
-    float: none;
+   
+    float: right;
     width: 125px;
+    margin-left: 15px;
     height: auto;
+}
+.hero article p {
+    color: #000;
 }
 
 nav ul {
@@ -134,24 +134,26 @@ nav ul li a {
 }
 
 .history {
-    margin: 20px 0;
-    padding: 10px;
+    margin: 40px 0;
+    padding: 20px;
 }
 
 .history h2 {
     text-align: center;
-    margin-bottom: 15px;
+    color: #079992;
+    margin-bottom: 20px;
 }
 
 .history div {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
 }
 
 .history img {
     width: 100%;
+    height: auto;
 }
 
 .adventure {

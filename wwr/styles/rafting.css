@@ -44,7 +44,8 @@ h2 {
 .history h2,
 .adventure h2,
 .adventures h2 {
-  color: #00796B;
+    background-color: #ffffff;
+    color: #004d40;
 }
 p,
 section,

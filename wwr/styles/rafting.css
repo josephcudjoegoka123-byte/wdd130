@@ -198,27 +198,44 @@ header img {
     width: 80px;
     height: auto;
 }
+
 .contact-info {
     text-align: center;
+    margin: 20px 0;
+}
+
+.employees {
+    text-align: center;
+    margin-top: 40px;
 }
 .employees div{
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items: center;
 }
 .employees img {
     width: 200px;
-    height: auto;
-
+    height: 150px;
+    object-fit: cover;
 }
+
+
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 350px; 
-  gap: 30px;
-  max-width: 1000px;
+  grid-template-columns: 1fr 330px; 
+  gap: 20px; 
+  max-width: 840px; 
   margin: 0 auto; 
   padding: 20px;
   align-items: start;
+}
+
+
+.contact-container iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
 }
 
 .contact-form {
@@ -227,12 +244,13 @@ header img {
     padding: 20px;
     gap: 12px;
     background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 }
 fieldset label {
     display: block;
     margin: 5px 0;
 }
-
 
 footer {
     display: flex;

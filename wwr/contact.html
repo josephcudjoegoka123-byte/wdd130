@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,7 @@
     <meta name="author" content="Joseph Cudjoe Goka">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-
     <header>
         <img src="images/z-raftingbw.png" alt="logo profile" width="100">
         <nav>
@@ -25,73 +22,77 @@
             </ul>
         </nav>
     </header>
-
     <main>
+        <h1>Contact Goka Water Rafting</h1>
         <div class="contact-info">
-            <h1>White Water Rafting Company</h1>
             <p>123 Main River Street, New York, NY 10001</p>
             <p>Phone: (123) 456-7890</p>
             <p>Email: info@gokawaterrafting.com</p>
         </div>
         <div class="contact-container">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114464.52390335455!2d50.088279!3d26.2172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e7d5a2c0b0b1%3A0x1!2sAl%20Khobar%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
-                        width="600" 
-                        height="450" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-        </div>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <fieldset>
-                <legend>Message Purpose</legend>
-
-                <label for="purpose">General Inquiry</label>
-                <input type="radio" id="purpose" name="purpose">
-
-                <label for="reason">Reservation</label>
-                <input type="radio" id="reason" name="purpose">
-
-                <label for="website">Website Suggestion</label>
-                <input type="radio" id="website" name="purpose">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114464.52390335455!2d50.088279!3d26.2172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e7d5a2c0b0b1%3A0x1!2sAl%20Khobar%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                    width="600" 
+                    height="450" 
+                    allowfullscreen
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Company location map">
+                </iframe>
+            </div>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
                 
-            </fieldset>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type here..."></textarea>
-            
-            <label for="subscribe"> Please subscribe me to the monthly newsletter</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
-
-            <button type="submit">Get in Touch</button>
-        </form>
-        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <div>
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        <label for="purpose-general">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        <label for="purpose-reservation">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                        <label for="purpose-suggestion">Website Suggestion</label>
+                    </div>             
+                </fieldset>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type here..." required></textarea>
+                
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <button type="submit">Get in Touch</button>
+            </form>
+        </div>
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
-            <div>
+            <div class="employee-gallery">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee" width="150">
-                    <figcaption> Employee Profile </figcaption>
+                    <img src="images/employee1.jpg" alt="Happy employee - Tour Guide" width="150">
+                    <figcaption>Tour Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt=" Employee" width="150">
-                    <figcaption> Employee Profile </figcaption>
+                    <img src="images/employee2.jpg" alt="Happy employee - Reservation Manager" width="150">
+                    <figcaption>Reservation Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee" width="150">
-                    <figcaption> Employee Profile </figcaption>
+                    <img src="images/employee3.jpg" alt="Happy employee - Safety Instructor" width="150">
+                    <figcaption>Safety Instructor</figcaption>
                 </figure>
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2026 | Goka Water Rafting | Joseph Cudjoe Goka</p>
         <nav class="socialmedia">
@@ -101,7 +102,6 @@
             <a
               href="https://www.linkedin.com/in/joseph-cudjoe-goka-a64599410?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
                 <img src="images/linkedin.svg" alt="linkedin profile" width="50">
-
             </a>
             <a
               href="https://www.instagram.com/sirrr_heisenberg_?stkn=cWIxemRwNWo3YW1n&utm_source=qr">
@@ -109,9 +109,5 @@
             </a>
         </nav>
     </footer>
-
-
 </body>
-
-
 </html>
